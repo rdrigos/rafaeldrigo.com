@@ -32,8 +32,11 @@
   },
   "dependencies": {
     "@tanstack/react-router": "1.160.2",
+    "clsx": "2.1.1",
     "react": "19.2.4",
     "react-dom": "19.2.4",
+    "tailwind-merge": "3.4.1",
+    "tailwind-variants": "3.2.2",
     "tailwindcss": "4.1.18"
   }
 }
