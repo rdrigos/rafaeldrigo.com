@@ -6,6 +6,10 @@
 
   --primary: hsl(211, 100%, 50%);
   --primary-foreground: hsl(0, 0%, 100%);
+  --danger: hsl(3, 100%, 59%);
+  --danger-foreground: rgb(255, 255, 255);
+
+  --border: hsl(0, 0%, 85%);
 }
 
 .dark {
@@ -14,6 +18,10 @@
 
   --primary: hsl(210, 100%, 52%);
   --primary-foreground: hsl(0, 0%, 100%);
+  --danger: hsl(3, 100%, 61%);
+  --danger-foreground: hsl(0, 0%, 100%);
+
+  --border: hsl(222, 20%, 16%);
 }
 
 @theme inline {
@@ -22,9 +30,16 @@
 
   --color-primary: var(--primary);
   --color-primary-foreground: var(--primary-foreground);
+  --color-danger: var(--danger);
+  --color-danger-foreground: var(--danger-foreground);
+
+  --color-border: var(--border);
 }
 
 @layer base {
+  * {
+    @apply border-border;
+  }
   body {
     @apply bg-background text-foreground;
   }
