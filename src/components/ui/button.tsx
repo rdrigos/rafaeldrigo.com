@@ -7,7 +7,7 @@ export const buttonVariants = tv({
   base: [
     'inline-flex cursor-pointer items-center justify-center gap-2 rounded-lg text-sm font-medium whitespace-nowrap transition-colors duration-300',
     'disabled:pointer-events-none disabled:opacity-50',
-    'focus-visible:ring-primary/45 focus-visible:ring-3 focus-visible:outline-none',
+    'focus-visible:ring-primary/35 focus-visible:ring-3 focus-visible:outline-none',
     '[&_svg:not([class*="size-"])]:size-4 [&_svg]:shrink-0',
   ],
   variants: {
@@ -23,7 +23,7 @@ export const buttonVariants = tv({
       'expand-icon': 'group gap-0 relative',
     },
     danger: {
-      true: 'focus-visible:ring-danger/45',
+      true: 'focus-visible:ring-danger/35',
     },
   },
   compoundVariants: [
@@ -35,7 +35,7 @@ export const buttonVariants = tv({
     {
       variant: 'outline',
       danger: true,
-      class: 'text-danger border-danger hover:border-danger/80 hover:text-danger/85',
+      class: 'text-danger border-danger hover:border-danger/80 hover:text-danger/80',
     },
   ],
   defaultVariants: {

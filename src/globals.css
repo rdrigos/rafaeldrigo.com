@@ -7,7 +7,10 @@
   --primary: hsl(211, 100%, 50%);
   --primary-foreground: hsl(0, 0%, 100%);
   --danger: hsl(3, 100%, 59%);
-  --danger-foreground: rgb(255, 255, 255);
+  --danger-foreground: hsl(0, 0%, 100%);
+
+  --input: hsl(0, 0%, 85%);
+  --input-foreground: hsl(240, 4%, 46%);
 
   --border: hsl(0, 0%, 85%);
 }
@@ -21,6 +24,9 @@
   --danger: hsl(3, 100%, 61%);
   --danger-foreground: hsl(0, 0%, 100%);
 
+  --input: hsl(222, 20%, 16%);
+  --input-foreground: hsl(240, 5%, 64%);
+
   --border: hsl(222, 20%, 16%);
 }
 
@@ -32,6 +38,9 @@
   --color-primary-foreground: var(--primary-foreground);
   --color-danger: var(--danger);
   --color-danger-foreground: var(--danger-foreground);
+
+  --color-input: var(--input);
+  --color-input-foreground: var(--input-foreground);
 
   --color-border: var(--border);
 }
