@@ -1,21 +1,6 @@
 @import 'tailwindcss';
 
 :root {
-  --background: hsl(220 20% 97%);
-  --foreground: hsl(220 25% 10%);
-
-  --primary: hsl(211, 100%, 50%);
-  --primary-foreground: hsl(0, 0%, 100%);
-  --danger: hsl(3, 100%, 59%);
-  --danger-foreground: hsl(0, 0%, 100%);
-
-  --input: hsl(0, 0%, 85%);
-  --input-foreground: hsl(240, 4%, 46%);
-
-  --border: hsl(0, 0%, 85%);
-}
-
-.dark {
   --background: hsl(227, 29%, 6%);
   --foreground: hsl(210, 20%, 92%);
 
@@ -28,6 +13,21 @@
   --input-foreground: hsl(240, 5%, 64%);
 
   --border: hsl(222, 20%, 16%);
+}
+
+.light {
+  --background: hsl(220 20% 97%);
+  --foreground: hsl(220 25% 10%);
+
+  --primary: hsl(211, 100%, 50%);
+  --primary-foreground: hsl(0, 0%, 100%);
+  --danger: hsl(3, 100%, 59%);
+  --danger-foreground: hsl(0, 0%, 100%);
+
+  --input: hsl(0, 0%, 85%);
+  --input-foreground: hsl(240, 4%, 46%);
+
+  --border: hsl(0, 0%, 85%);
 }
 
 @theme inline {
@@ -51,5 +51,11 @@
   }
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+@layer utilities {
+  .glass {
+    @apply bg-background/70 backdrop-blur-sm;
   }
 }

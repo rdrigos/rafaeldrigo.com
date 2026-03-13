@@ -26,7 +26,6 @@ export const textVariants = tv({
   defaultVariants: {
     variant: 'paragraph',
     weight: 'normal',
-    align: 'left',
   },
 });
 
